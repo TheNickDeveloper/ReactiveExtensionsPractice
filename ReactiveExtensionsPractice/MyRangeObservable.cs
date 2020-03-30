@@ -19,11 +19,10 @@ namespace ReactiveExtensionsPractice
         {
             try
             {
-                observer.OnError(new Exception("nono!!"));
                 for (int i = _start; i < _start + _count; i++)
                 {
-                    observer.OnCompleted();
                     observer.OnNext(i);
+                    observer.OnCompleted();
                 }
 
                 observer.OnCompleted();
