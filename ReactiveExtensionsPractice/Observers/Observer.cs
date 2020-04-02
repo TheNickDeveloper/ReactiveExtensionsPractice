@@ -7,7 +7,7 @@ namespace ReactiveExtensionsPractice
 {
     public class Observer<T> : IObserver<T>
     {
-        private string _name;
+        private readonly string _name;
 
         public Observer(string name = "sub1")
         {
